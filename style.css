@@ -22,7 +22,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    height: 55px;
+    height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -43,7 +43,7 @@ header:hover{
 header ul{
     
     position: relative;
-    left: -120px; /* was 110++++++++++++++++++ */
+    left: -40px; /* was 110++++++++++++++++++ */
     display: flex;
     justify-content: center;
     align-items: center;
