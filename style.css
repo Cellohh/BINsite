@@ -1,0 +1,966 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: fantasy, serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #777;
+    
+}
+
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+    z-index: 1000;
+    transition: 0.5s;
+
+}
+
+header:hover{
+    
+    background-color: #282e34;
+    border-radius: 8px;
+    
+}
+
+header ul{
+    
+    position: relative;
+    left: -110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    
+    list-style: none;
+    
+}
+
+header ul li a{
+    
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 15px 15px;
+}
+
+ul li a:hover{
+    
+   text-decoration: underline;
+}
+
+
+a{
+    
+    color: blue;
+    text-decoration: none;
+}
+
+.news-box-1 a:hover{
+    
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#top-logo img{
+    
+     height: 155px;
+     width: 255px;
+     padding: 15px;
+     position: relative;
+     top: 50px;
+     left: 16px;
+                 
+}
+
+#top-logo img:hover{
+    
+     background-color: #282e34;
+     border-radius: 100%;
+     transition: 0.5s;
+     
+   
+}
+
+.socials li{
+    
+    display: inline-block;
+    justify-content: space-between;
+    position: relative;
+    top: 4px;
+    right: -220px;
+                   
+}
+
+
+#youtube img{
+    
+    height: 34.5px;
+    width: 44.5px;
+    margin: 0px 4px 0px 0px;
+        
+}
+
+#ig img{
+    
+    height: 34.5px;
+    width: 44.5px;
+    margin: 0px 4px 0px 0px;
+    
+}
+
+#twitter img{
+    
+    height: 37.5px;
+    width: 45.5px;
+    margin: 0px 4px 0px 0px;
+}
+
+#discord img{
+    
+    height: 37.5px;
+    width: 41.5px;
+    margin: 0px 4px 0px 0px;
+   
+}
+
+#tiktok img{
+    
+    height: 29.5px;
+    width: 29.5px;
+    margin: 0px 4px 0px 0px;
+                
+}
+
+#twitch img{
+    
+    height: 41.5px;
+    width: 51.5px;
+             
+}
+
+
+#most-recent-text{
+    
+    font-size: 18px;
+    color: burlywood;
+    letter-spacing: 7px;
+    position: relative;
+    top: 300px;
+  
+}
+
+#most-recent-tournament{
+    
+    font-size: 18px;
+    color: burlywood;
+    position: relative;
+    top: 300px;
+    
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    
+    position: relative;
+    /*opacity: 0.70;*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /*
+    fixed = parrallax
+    scroll = normal
+    */
+    
+    background-attachment: fixed;
+}
+
+.pimg1{
+    
+    background-image: url('../images/bg5.png');
+    min-height: 100%;
+}
+
+.pimg2{
+    
+    background-image: url('../images/2ndbg.png');
+    min-height: 400px;
+}
+
+.pimg3{
+    
+    background-image: url('../images/3rddbg.png');
+    min-height: 400px;
+}
+
+.pimg4{
+    
+    background-image: url('../images/4THBG.PNG');
+    min-height: 100%;
+}
+
+.section{
+    
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    
+    background-color: #fff;
+    color: #1c1a18;
+    
+}
+
+.section-dark{
+    
+    background-color: #282e34;
+    color: #ddd;
+    letter-spacing: 4px;
+}
+
+.ptext{
+    
+    position: absolute;
+    top 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.first-border{
+    
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    top: 250px;
+}
+
+.ptext .border{
+    
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    
+}
+
+@media(max-width:568px){
+    
+    .pimg1, .pimg2, .pimg3 .pimg4{
+        background-attachment: scroll;
+        
+    }
+}
+
+.news-box-1{
+    
+    display: inline-block;
+    position: relative;
+    font-family: monospace;
+    height 250px;
+    width: 100%;
+    max-width: 535px;
+    padding: 32px 24px 32px 16px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgba(252, 138, 4);
+}
+
+
+.merch-box{
+    
+    display: inline-block;
+    width: 100%;
+    max-width: 535px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 14px;
+        
+} 
+
+
+#see-more {
+    
+    margin: 5px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+          
+} 
+
+.merch-content:hover{
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+#see-more:hover{
+    
+   transform: translate(0px, -8px);
+    text-decoration: underline;
+   
+}
+
+.merch-box img {
+    
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.buy-1 {
+    /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+background: rgb(239,197,202); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(239,197,202,1) 0%, rgba(210,75,90,1) 50%, rgba(186,39,55,1) 51%, rgba(241,142,153,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=0 ); /* IE6-9 */
+
+
+
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 50%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.buy-1:hover{
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.buy-2 {
+    /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    width: 50%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+    
+}
+
+.buy-2:hover{
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.slider{
+    
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    
+    display: flex;
+    width: calc(250px * 16);
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+    
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+.slide{
+    
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide-track img{
+    
+    width: 100%;
+    transition: transform 1%;
+}
+
+img:hover {
+    
+    transform: translateZ(20px);
+        
+}
+
+.slider::before,
+.slider::after{
+    
+    background: linear-gradient(to right. rgba(255,255,255,1) 0%,
+    rgba(255,255,255,0) 100%);
+    content:  '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    
+    left: 0;
+    top: 0;
+}
+
+.slider::after{
+    
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.sponsor-box{
+    
+    display: inline-block;
+    position: relative;
+    color: #333;
+    height 250px;
+    width: 100%;
+    max-width: 535px;
+    background-color: #fff;
+    margin: 300px;
+    padding: 32px 24px 32px 16px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+
+#tourney-1st-bg {
+    
+    background-image: url('../images/tourney2.jpg');
+    min-height: 100%;
+}
+
+#next-tournament {
+    
+    position: relative;
+    top: 250px;
+    
+}
+
+#tourney-2nd-bg {
+    
+    background-color: #0144a7;
+    min-height: 100%;
+    
+        
+}
+
+#recent-tournaments-text {
+    
+    position: relative;
+    color: white;
+    top: 75px;
+    text-align: center;
+    letter-spacing: 4px;
+    
+}
+
+.video-container-1 {
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 100px 30px 0px 100px;
+    margin: 15px;
+    right: 50px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
+          
+}
+
+/*
+.video-container-2 {
+    
+    display: flex;
+    width: 100%;
+    padding: 25px 0px 0px 250px;
+    margin: 15px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-start;
+          
+}
+*/
+
+.videos {
+    
+    margin: 25px;
+    
+}
+
+.videos p {
+    
+    color: white;
+}
+
+
+.hex-contain {
+    
+    display: grid;
+    grid-column-gap: 2.3vw;
+    grid-row-gap: 7vw;
+    grid-template-columns: 5, 7vw;
+    grid-auto-rows: 7vw;
+    grid-template-areas:  "g1 . g2 . g3 . g4 . g5";
+    justify-content: space-evenly;
+}
+
+.clip {
+    
+    position: relative;
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: scale(2.5);
+    transition: 0.3s;
+}
+
+.hex1 {
+    
+    grid-area: g1;
+}
+
+.hex2 {
+    
+    grid-area: g2;
+}
+
+.hex3 {
+    
+    grid-area: g3;
+}
+
+.hex4 {
+    
+    grid-area: g4;
+}
+
+.hex5 {
+    
+    grid-area: g5;
+}
+
+.clip:hover {
+    z-index: 1;
+    transform: scale(3.0);
+    box-shadow: 500px 500px 500px 500px #000;
+}
+
+#gray-extender {
+    
+    background-color: #282e34;
+    color: #ddd;
+    letter-spacing: 4px;
+    padding: 0px 0px 150px 0px;
+}
+
+.join-us {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+.join-us-buttons {
+    
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+       
+}
+
+.volunteer {
+    
+      
+    display: flex;
+    position: relative;
+    border-radius: 14px;
+    margin: 0px 250px 0px 250px;
+        
+}
+
+.volunteer:hover {
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.volunteer-button {
+    
+        /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
+background: rgb(183,222,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+
+    
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    height: 10%;
+    width: 10%;
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.vendor {
+    
+      
+    display: flex;
+    position: relative;
+    border-radius: 14px;
+    margin: 0px 250px 0px 250px;
+   
+}
+
+.vendor:hover {
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.vendor-button {
+    
+        /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+    
+
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    height: 10%;
+    width: 10%;
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+
+#tourney-3rd-bg {
+    
+    background-color: #151b24;
+    min-height: 65%;
+    
+        
+}
+
+#about-back {
+    
+    background-image: url('../images/tempbg.png');
+    background-repeat: repeat;
+    min-height: 100%;
+}
+
+#about-2nd-bg {
+    
+    background-color: #FAD4AA;
+    min-height: 100%;
+}
+
+.about-container {
+    
+    margin: 0px auto;
+    width: 50%;
+    padding: 8px;
+}
+
+.about-container img {
+    
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+
+.p-about {
+    
+    font-family: monospace;
+    color: #000;
+    text-align: justify;
+    /*text-shadow: 5px;   <-- MAYBE!!   */
+               
+}
+
+#store-1st-bg {
+    
+    background-image: url('../images/shop2.jpg');
+    object-fit: contain;
+    background-repeat: repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+    position: relative;
+    background-color: #282e34;
+    min-height: 75%;
+    z-index: -1;
+    
+}
+
+#store-2nd-bg {
+    
+    background-color: #282e34;
+    overflow: hidden;    
+    position: relative;
+    min-height: 100%;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+
+.store-container {
+    
+    width: 100%;
+    margin: 0px auto;
+    columns: 4;
+    column-gap: 10px;
+    
+}
+
+.store-box {
+    
+    width: 435px;
+    padding: 20px;
+    background-color: #fff;
+    color: #1a1335;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    break-inside: avoid;
+    
+}
+
+
+.store-item-1:hover, .store-item-2:hover, .store-item-3:hover, .store-item-4:hover, .store-item-5:hover,  .store-item-6:hover,  .store-item-7:hover,  .store-item-8:hover, .store-item-9:hover,  .store-item-10:hover,  .store-item-11:hover,  .store-item-12:hover,  .store-item-13:hover,  .store-item-14:hover,  .store-item-15:hover,  .store-item-16:hover,  .store-item-17:hover,  .store-item-18:hover,  .store-item-19:hover,  .store-item-20:hover {
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+    background-size: 150%;
+    transition: 1s;
+    
+}
+
+
+.store-button {
+    
+        /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
+background: rgb(183,222,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+
+    
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    height: 10%;
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.store-button:hover {
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+
+#media-1st-bg {
+    
+    background-image: url('../images/screen4.png');
+    background-size: cover;
+    z-index: -1;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment:local;
+    position: relative;
+    background-color: #282e34;
+    min-height: 75%;
+}
+
+#media-2nd-bg {
+    
+    background-color: #27173e;
+    overflow: hidden;    
+    position: relative;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.media-container {
+    
+    width: 100%;
+    margin: 0px auto;
+    columns: 4;
+    column-gap: 10px;
+}
+
+.media-box {
+    
+    width: 435px;
+    padding: 20px;
+    background-color: #f6c377;
+    color: #1a1335;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    
+}
+
+.media-box iframe {
+    
+    width: 100%;
+    height: 270px;
+    object-fit: contain;
+    
+}
+
+.media-box img {
+    
+    width: 100%;
+    height: 270px;
+    object-fit: contain;
+    
+}
+
+#volunteer-back {
+    
+    background-image: url('../images/twoguys2.png');
+    background-repeat: repeat;
+    min-height: 75%;
+}
+
+#volunteer-2nd-bg {
+    
+    background-color: #282e34;
+    overflow: hidden;    
+    position: relative;
+    min-height: 100%;
+    justify-content: center;
+    z-index: -1;
+}
+
+#vendor-back {
+    
+    background-image: url('../images/seoul2.png');
+    background-repeat: repeat;
+    min-height: 75%;
+}
+
+#vendor-2nd-bg {
+    
+    background-color: #282e34;
+    overflow: hidden;    
+    position: relative;
+    min-height: 100%;
+    justify-content: center;
+    z-index: -1;
+}
