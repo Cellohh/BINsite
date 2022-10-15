@@ -198,25 +198,25 @@ a{
 
 .pimg1{
     
-    background-image: url('../images/bg5.png');
+    background-image: url('bg5.png');
     min-height: 100%;
 }
 
 .pimg2{
     
-    background-image: url('../images/2ndbg.png');
+    background-image: url('2ndbg.png');
     min-height: 400px;
 }
 
 .pimg3{
     
-    background-image: url('../images/3rddbg.png');
+    background-image: url('3rddbg.png');
     min-height: 400px;
 }
 
 .pimg4{
     
-    background-image: url('../images/4THBG.PNG');
+    background-image: url('4THBG.PNG');
     min-height: 100%;
 }
 
@@ -499,7 +499,7 @@ img:hover {
 
 #tourney-1st-bg {
     
-    background-image: url('../images/tourney2.jpg');
+    background-image: url('tourney2.jpg');
     min-height: 100%;
 }
 
@@ -744,7 +744,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 #about-back {
     
-    background-image: url('../images/tempbg.png');
+    background-image: url('tempbg.png');
     background-repeat: repeat;
     min-height: 100%;
 }
@@ -780,7 +780,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 #store-1st-bg {
     
-    background-image: url('../images/shop2.jpg');
+    background-image: url('shop2.jpg');
     object-fit: contain;
     background-repeat: repeat;
     overflow: hidden;
@@ -875,7 +875,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 #media-1st-bg {
     
-    background-image: url('../images/screen4.png');
+    background-image: url('screen4.png');
     background-size: cover;
     z-index: -1;
     background-repeat: no-repeat;
@@ -933,7 +933,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 #volunteer-back {
     
-    background-image: url('../images/twoguys2.png');
+    background-image: url('twoguys2.png');
     background-repeat: repeat;
     min-height: 75%;
 }
@@ -950,7 +950,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 #vendor-back {
     
-    background-image: url('../images/seoul2.png');
+    background-image: url('seoul2.png');
     background-repeat: repeat;
     min-height: 75%;
 }
