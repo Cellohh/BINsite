@@ -778,6 +778,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
                
 }
 
+.about-box{
+    
+    display: inline-block;
+    position: relative;
+    color: #333;
+    height 250px;
+    width: 100%;
+    max-width: 1500px;
+    background-color: #FAD4AA;
+    margin: 50px;
+    padding: 0px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+
+.about-box ul {
+    
+    list-style-type: none;
+    font-family: monospace;
+    
+}
+
+.about-box a {
+    
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    
+}
+
 #store-1st-bg {
     
     background-image: url('shop2.jpg');
