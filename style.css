@@ -23,6 +23,7 @@ header{
     top: 0;
     left: 0;
     height: 65px;
+    left: -150px; /* added this left in for logo */
     width: 100%;
     display: flex;
     justify-content: space-evenly;
