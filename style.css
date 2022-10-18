@@ -43,7 +43,7 @@ header:hover{
 header ul{
     
     position: relative;
-    left: -90px; /* was 110++++++++++++++++++ */
+    left: -90px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +90,7 @@ a{
      padding: 15px;
      position: relative;
      top: 50px;
-     left: 16px;
+     left: 0px; /* was 16++++++++++++++++++ */
                  
 }
 
