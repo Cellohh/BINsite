@@ -62,7 +62,7 @@ header ul li a{
     color: #fff;
     letter-spacing: 2px;
     font-weight: 500;
-    padding: 15px 15px;
+    padding: 15px 5px; /* was 15++++++++++++++++++ */
 }
 
 ul li a:hover{
