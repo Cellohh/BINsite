@@ -1,6 +1,10 @@
 /* Notes: Edit this before going live and for tournaments
 1. Unhide sign up here on index
 2. Unhide next tournament pic/countdown in tournaments
+3. change email address on vendor page
+4. change email address on volunteer page
+5. take off X on volunteer href in tourney 2x
+6. take off X on vendor href in tourney 2x
 */
 
 *{
@@ -25,7 +29,7 @@ body, html {
 header{
     
     position: fixed;
-    top: 0;
+    top: -1%;
     left: 0px;
     height: 65px;
     width: 100vw;
@@ -57,7 +61,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282e34', end
 header ul{
     
     position: relative;
-    left: -90px; 
+    left: -22%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,13 +70,21 @@ header ul{
 header ul:hover{
     
     position: relative;
-    left: -90px; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: #282e34; /* color??????????????????????????????????? */ 
     transition: 0.5s;
 
+}
+
+header #ul2 {
+    
+    position: relative;
+    left: 18%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header ul li{
@@ -97,6 +109,7 @@ header ul li a{
     text-decoration: none;
     color: #fff;
     letter-spacing: 2px;
+    font-size: 14px;
     font-weight: 500;
     padding: 15px 5px; 
 }
@@ -131,58 +144,13 @@ a{
 
 
 
-.front {
+#xtop-logo:hover{
     
-     display: inline-block;
-     height: 175px;
-     width: 200px;
-     padding: 15px;
-     position: absolute;
-     top: -1px;
-     left: 851px; 
-     opacity: 100%;
-                 
-}
-
-.front:hover {
-     display: inline-block;
-     height: 175px;
-     width: 200px;
-     padding: 15px;
-     position: relative;
-     top: 60px;
-     left: -36px; 
-     opacity: 0%;
-     transition: 0.5s;
-}
-
-.back {
-    
-     display: inline-block;
-     height: 175px;
-     width: 200px;
-     padding: 15px;
-     position: relative;
-     top: 60px;
-     left: -36px; 
-     opacity: 0%;
-                 
-}
-
-.back:hover {
-     display: inline-block;
-     height: 175px;
-     width: 200px;
-     padding: 15px;
-     position: relative;
-     top: 59px;
-     left: -36px; 
-     opacity: 100%;
-     transition: 0.5s;
-
-}
-
-#top-logo img:hover{
+    display: inline-block;
+    position: absolute;
+    top: -1%;
+    left: 38.1%;
+    z-index: 3;
     
      background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282e34+0,282e34+100&0+59,0+59,0.65+94 */
 background: -moz-radial-gradient(center, ellipse cover,  rgba(40,46,52,0) 0%, rgba(40,46,52,0) 59%, rgba(40,46,52,0.65) 94%, rgba(40,46,52,0.65) 100%); /* FF3.6-15 */
@@ -198,11 +166,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
    
 }
 
+
+.top-logo {
+    position: fixed;
+    top: 10%;
+    left: 44.5%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.top-logo:hover {
+    
+    position: fixed;
+    top: 10%;
+    left: 44.5%;
+    z-index: 5;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.img-area {
+    
+    position: relative;
+    height: 175px;
+    width: 200px;
+}
+
+.img-area img.back {
+    opacity: 0;
+}
+
+.img-area img {
+    position: absolute;
+    left: 38.1%;
+    height: 175px;
+    width: 200px;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-area img.front:hover {
+    opacity: 0;
+    cursor: pointer;
+}
+.img-area img.back:hover {
+    opacity: 100;
+    cursor: pointer;
+}
 .socials li{
     
     display: inline-block;
     justify-content: space-between;
     position: relative;
+    margin: 0 -9px;
     top: 4px;
     right: -220px;
                    
@@ -266,14 +281,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
   
 }
 
-#most-recent-tournament{
+.most-recent-tournament{
     
+    position: relative;
+    width: 560px;
+    height: 315px;
     font-size: 18px;
     color: burlywood;
-    position: relative;
     top: 300px;
+    left: 31%;
     
-}
+}    
+    .most-recent-tournament iframe {
+        
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    }
 
 .pimg1, .pimg2, .pimg3, .pimg4{
     
@@ -365,13 +392,113 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
     
 }
 
+
+/*------MOBILE MAIN PAGE-------*/
+
 @media(max-width:568px){
     
-    .pimg1, .pimg2, .pimg3 .pimg4{
-        background-attachment: scroll;
+    header{
+    
+    position: fixed;
+    top: -1%;
+    left: 40px;
+    height: 65px;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+    z-index: 1000;
         
     }
+    
+    .top-logo {
+    position: fixed;
+    left: 40.5%;
+    top: 12.5%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 }
+    
+    .top-logo:hover {
+    
+    display: none;
+}
+    
+    .top-logo img{
+        
+    width: 200px;
+    height: 170px;
+    top: -35%;
+    left: -200px
+}
+    
+    .top-logo img .front {
+    display: none;
+}  
+    .most-recent-tournament {
+    
+    position: relative;
+    top: 300px;
+    padding-top: 56.25%;
+    
+}
+    
+    .most-recent-tournament iframe {
+        
+    position: absolute;
+    top: 0;
+    left: -113.5px;
+    width: 67%;
+    height: 100%;
+    
+    }
+    
+    .merch-content {
+    display: inline-block;
+    position: relative;
+    left: -50px;
+}
+    
+    .socials {
+    
+    position: fixed;
+    bottom: 1.2%;
+    left: -265px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+    
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+        background-attachment: scroll;
+    }
+    
+    .first-border {
+        font-size: 18px;
+    }
+    
+    .sponsor-box{
+    
+    display: inline-block;
+    position: relative;
+    color: #333;
+    height 250px;
+    width: 100%;
+    top: -100px;
+    left: -300px;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+}
+
+
+/*-------END MOBILE MAIN------*/
+
+
 
 .news-box-1{
     
@@ -390,7 +517,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
 .merch-box{
     
     display: inline-block;
+    position: relative;
     width: 100%;
+    left: 0px;
     max-width: 535px;
     justify-content: center;
     align-items: center;
@@ -592,6 +721,13 @@ img:hover {
     box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
 }
 
+
+
+
+/*-------------Tourney Page----------*/
+
+
+
 #tourney-1st-bg {
     
     background-image: url('tourney2.jpg');
@@ -637,20 +773,6 @@ img:hover {
     justify-content: center;
           
 }
-
-/*
-.video-container-2 {
-    
-    display: flex;
-    width: 100%;
-    padding: 25px 0px 0px 250px;
-    margin: 15px;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: flex-start;
-          
-}
-*/
 
 .videos {
     
@@ -723,6 +845,14 @@ img:hover {
     color: #ddd;
     letter-spacing: 4px;
     padding: 0px 0px 150px 0px;
+}
+
+#gray-extender h4 {
+    
+    display: inline-block;
+    position: relative;
+    left: 45.5%;
+
 }
 
 .join-us {
@@ -837,6 +967,222 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
         
 }
 
+
+
+
+/*----------TOURNEY MOBILE---------*/
+
+@media (max-width: 568px) {
+    
+    #tourney-2nd-bg {
+    
+    background-color: #0144a7;
+    min-height: 210%;
+    
+        
+}
+    
+    .video-container-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 105%;
+    left: -12%;
+    }
+    
+    .hex-contain {
+    
+    display: grid;
+    grid-column-gap: 2.3vw;
+    grid-row-gap: 7vw;
+    grid-template-columns: 5, 7vw;
+    grid-auto-rows: 7vw;
+    grid-template-areas:  "g1 . g2 . g3 . g4 . g5";
+    justify-content: space-between;
+}
+    
+    .clip {
+    
+    position: relative;
+    background-color: #ccc;
+    width: 150%;
+    height: 150%;
+    left: -10px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: scale(3.5);
+    transition: 0.3s;
+}
+    
+.hex1 {
+    
+    grid-area: g1;
+}
+
+.hex2 {
+    
+    grid-area: g2;
+}
+
+.hex3 {
+    
+    grid-area: g3;
+}
+
+.hex4 {
+    
+    grid-area: g4;
+}
+
+.hex5 {
+    
+    grid-area: g5;
+}
+    
+    #gray-extender {
+    
+    position: relative; 
+    background-color: #282e34;
+    color: #ddd;
+    letter-spacing: 4px;
+    padding: 0px 0px 150px 0px;
+}
+    
+    #gray-extender h4 {
+    
+    display: inline-block;
+    position: relative;
+    left: 5%;
+
+}
+    
+   .join-us {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+.join-us-buttons {
+    
+    position: relative;
+    display: inline-block;
+    
+}
+
+.volunteer {
+    
+      
+    display: flex;
+    position: relative;
+    border-radius: 14px;
+    left: 200px;
+} 
+    
+    .vendor {    
+      
+    display: flex;
+    position: relative;
+    border-radius: 14px;
+    left: -200px;
+} 
+    
+    .volunteer-button {
+    
+        /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
+background: rgb(183,222,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+
+    
+    
+    display: flex;
+    position: relative;
+    left: 25px;
+    top: 2px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    height: 10%;
+    width: 100%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+    
+    
+.vendor-button {
+    
+        /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+    
+
+    display: flex;
+    position: relative;
+    left: 265px;
+    top: -60px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    height: 10%;
+    width: 80%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+    #tourney-3rd-bg .border {
+        
+       position: absolute;
+       width: 99.9%;
+       left: 0px;
+       font-size: 22px;
+    }
+    
+    .sponsor-box{
+    
+    display: inline-block;
+    position: relative;
+    color: #333;
+    height 250px;
+    width: 99%;
+    max-width: 535px;
+    background-color: #fff;
+    margin: 300px;
+    padding: 32px 24px 32px 16px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+    
+}
+
+
+
+
+/*--------END MOBILE TOURNEY--------*/
+
+
+
+/*-------------ABOUT PAGE-----------*/
+
+
+
 #about-back {
     
     background-image: url('tempbg.png');
@@ -882,7 +1228,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     width: 100%;
     max-width: 1500px;
     background-color: #FAD4AA;
-    margin: 50px;
+    margin: 50px 0px;
     padding: 0px;
     border-radius: 14px;
     box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
@@ -903,17 +1249,98 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     
 }
 
+
+
+
+
+
+/*------------ABOUT MOBILE--------------*/
+
+
+
+
+
+
+@media (max-width: 568px) {
+    
+    
+    #about-back {
+    
+        background-image: url('tempbg2.png');
+        background-repeat: repeat;
+        min-height: 100%;
+        left: 0px;
+}
+    
+    #about-2nd-bg {
+        
+        display: flex;
+        position: absolute;
+        position: relative;
+        height: 3600px;
+    }
+    
+      #about-2nd-bg .border {
+        
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        font-size: 21px;
+    }
+    
+    .about-container img {
+        
+        display: inline-block;
+        position: absolute;
+        top: 100px;
+        left: -10px;
+        z-index: 1;
+    }
+    
+    .about-container .p-about {
+        
+        position: absolute;
+        top: 300px;
+        width: 95%;
+        left: 5px;
+        z-index: 1;
+    }
+    
+    .about-box{
+    
+    display: inline-block;
+    position: relative;
+    color: #333;
+    height 250px;
+    width: 97%;
+    max-width: 1500px;
+    background-color: #FAD4AA;
+    margin: 50px 0px;
+    padding: 0px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+    
+}
+
+
+
+
+
+/*-----------END ABOUT MOBILE-----------*/
+
+
+/*-------------STORE PAGE---------------*/
+
+
+
+
 #store-1st-bg {
     
     background-image: url('shop2.jpg');
-    object-fit: contain;
-    background-repeat: repeat;
-    overflow: hidden;
-    background-attachment: fixed;
-    position: relative;
-    background-color: #282e34;
-    min-height: 75%;
-    z-index: -1;
+    
+    background-attachment: scroll;
+   
     
 }
 
@@ -940,16 +1367,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 .store-box {
     
-    width: 435px;
-    padding: 20px;
+    width: 425px;
+    padding: 10px;
     background-color: #fff;
     color: #1a1335;
     border: 1px solid grey;
     margin-bottom: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
     break-inside: avoid;
     
+}
+
+.store-box img {
+    
+    width: 90%;
 }
 
 
@@ -981,7 +1411,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
     font-size: 24px;
     color: white;
     height: 10%;
-    width: 100%;
+    width: 90%;
     padding: 15px 10px 15px 10px;
     border: 0;
     outline: none;
@@ -996,6 +1426,116 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
     0 3px 6px rgba(0,0,0,0.23);
     transform: translate(0px, -8px);
 }
+
+
+
+
+/*------------STORE MOBILE----------*/
+
+
+
+@media (max-width: 568px) {
+    
+    #store-1st-bg {
+    
+    background-image: url('shop2small.jpg');
+    object-fit: contain;
+    background-repeat: repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+    position: relative;
+    background-color: #282e34;
+    min-height: 75%;
+    z-index: -1;
+}
+    
+    .rba {
+        
+        display: inline-block;
+        position: absolute;
+        top: -90px;
+    }
+    
+    #store-2nd-bg {
+    
+    background-color: #282e34;
+    overflow: hidden;    
+    position: relative;
+    top: -20px;
+    min-height: 100%;
+    justify-content: center;
+    z-index: -1;
+}
+    
+    .store-container {
+    
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+    columns: 4;
+    column-gap: 10px;
+    
+}
+    
+    .store-box {
+    
+    width: 100px;
+    padding: 10px;
+    background-color: #fff;
+    color: #1a1335;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    break-inside: avoid;
+    
+}
+    
+    .store-box h2 {
+        font-size: 14px;
+    }
+
+.store-box img {
+    
+    width: 100%;
+}
+    
+    .store-button {
+    
+        /*Copied gradient code to look nice -Cello  /*
+    
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
+background: rgb(183,222,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+
+    
+    
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    height: 10%;
+    width: 90%;
+    font-size: 14px;
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+}
+
+
+/*------------END STORE MOBILE----------*/
+
+
+
+/*------------MEDIA PAGE----------*/
+
+
 
 
 #media-1st-bg {
@@ -1025,13 +1565,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
     width: 100%;
     margin: 0px auto;
     columns: 4;
-    column-gap: 10px;
+    column-gap: 2px;
 }
 
 .media-box {
     
-    width: 435px;
-    padding: 20px;
+    width: 395px;
+    height: auto;
+    padding: 5px;
     background-color: #f6c377;
     color: #1a1335;
     border: 1px solid grey;
@@ -1042,7 +1583,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 .media-box iframe {
     
-    width: 100%;
+    width: 97%;
     height: 270px;
     object-fit: contain;
     
@@ -1050,42 +1591,246 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 
 .media-box img {
     
-    width: 100%;
+    width: 97%;
     height: 270px;
     object-fit: contain;
     
 }
 
-#volunteer-back {
+#tourney-3rd-bg-media {
     
+    background-color: #151b24;
+    min-height: 65%;
+    
+        
+}
+
+
+
+
+/*----------MEDIA MOBILE-----------*/
+
+
+
+
+
+@media (max-width: 568px) {
+    
+    #media-1st-bg {
+    
+    background-image: url('screen4.png');
+    background-size: contain;
+    z-index: -1;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 170%;
+    background-color: #282e34;
+    min-height: 105%;
+    left: -130px;
+}
+    
+    #media-2nd-bg {
+    
+    background-color: #27173e;
+    overflow: hidden;    
+    position: relative;
+    min-height: 100%;
+    position: relative;
+    top: -415px;
+    z-index: -1;
+}
+    
+    .border.nth {
+        
+        position: absolute;
+        top: -390px;
+        left: 0px;
+    }
+    
+    .media-container {
+    
+    width: 100%;
+    margin: 0px auto;
+    columns: 2;
+    column-gap: 2px;
+}
+    
+    .media-box {
+    
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    background-color: #f6c377;
+    color: #1a1335;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    
+}
+    
+    #tourney-3rd-bg-media {
+    
+    position: relative;
+    background-color: #151b24;
+    height: 109%;
+    top: -430px;
+            
+}
+    
+    .border.saber {
+        
+        position: absolute;
+        width: 100%;
+        font-size: 18px;
+        top: 0px;
+        left: 0px;
+    }
+    
+    
+    #fmedia {
+        
+        position: absolute;
+        top: 2990px;
+        left: 35px;
+        overflow: hidden;
+    }
+    
+    
+}
+
+
+
+/*----------END MEDIA MOBILE-----------*/
+
+
+
+
+
+/*----------VOLUNTEER PAGE-------------*/
+
+#volunteer-back {
     background-image: url('twoguys2.png');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 75%;
 }
 
 #volunteer-2nd-bg {
-    
     background-color: #282e34;
     overflow: hidden;    
     position: relative;
     min-height: 100%;
-    justify-content: center;
+    display: flex;
+    align-items: center;
     z-index: -1;
 }
 
-#vendor-back {
+#volunteer-2nd-bg iframe {
+        position: relative;
+        display: inline-block;
+        left: 150%;
+        width: 200%;   
+    }
+
+
+/*----------VOLUNTEER MOBILE-----------*/
+
+@media (max-width: 568px) {
+    #volunteer-back {
+        background-image: url('twoguys2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        min-height: 75%;
+    }
+
+    #volunteer-2nd-bg {
+        background-color: #282e34;
+        overflow: hidden;    
+        position: relative;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+    }
     
-    background-image: url('seoul2.png');
-    background-repeat: repeat;
+    #volunteer-2nd-bg iframe {
+        position: relative;
+        display: inline-block;
+        width: 130%;
+    }
+}
+
+
+
+
+
+/*--------END VOLUNTEER MOBILE--------*/
+
+/*----------VENDOR PAGE-------------*/
+
+
+
+
+#vendor-back {
+    background-image: url('twoguys2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 75%;
 }
 
 #vendor-2nd-bg {
-    
     background-color: #282e34;
     overflow: hidden;    
     position: relative;
     min-height: 100%;
-    justify-content: center;
+    display: flex;
+    align-items: center;
     z-index: -1;
 }
+
+ #vendor-2nd-bg iframe {
+        position: relative;
+        display: inline-block;
+        left: 150%;
+        width: 200%;   
+    }
+
+/*--------VENDOR MOBILE--------*/
+
+@media (max-width: 568px) {
+    #vendor-back {
+        background-image: url('seoul2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        min-height: 75%;
+    }
+    
+      #vendor-2nd-bg {
+        background-color: #282e34;
+        overflow: hidden;    
+        position: relative;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+    }
+
+    #vendor-2nd-bg iframe {
+        position: relative;
+        display: inline-block;
+        width: 130%;   
+    }
+}
+
+/*--------END VENDOR MOBILE--------*/
+
+
+
+
+
+
+
+
