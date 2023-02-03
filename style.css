@@ -31,7 +31,7 @@ header{
     position: fixed;
     top: -1%;
     left: 0px;
-    height: 65px;
+    height: -406.25%;
     width: 100vw;
     color: #fff;
     display: flex;
@@ -143,30 +143,6 @@ a{
 }
 
 
-
-#xtop-logo:hover{
-    
-    display: inline-block;
-    position: absolute;
-    top: -1%;
-    left: 38.1%;
-    z-index: 3;
-    
-     background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282e34+0,282e34+100&0+59,0+59,0.65+94 */
-background: -moz-radial-gradient(center, ellipse cover,  rgba(40,46,52,0) 0%, rgba(40,46,52,0) 59%, rgba(40,46,52,0.65) 94%, rgba(40,46,52,0.65) 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  rgba(40,46,52,0) 0%,rgba(40,46,52,0) 59%,rgba(40,46,52,0.65) 94%,rgba(40,46,52,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  rgba(40,46,52,0) 0%,rgba(40,46,52,0) 59%,rgba(40,46,52,0.65) 94%,rgba(40,46,52,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', endColorstr='#a6282e34',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
-;
-     border-radius: 100%;
-     transition: 0.5s;
-     
-   
-}
-
-
 .top-logo {
     position: fixed;
     top: 10%;
@@ -188,19 +164,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
 .img-area {
     
     position: relative;
-    height: 175px;
-    width: 200px;
+    height: auto;
+    width: auto;
+    left: 47%;
+    
 }
 
 .img-area img.back {
     opacity: 0;
+    left: -25.35%;
+    z-index: 3;
 }
 
 .img-area img {
-    position: absolute;
-    left: 38.1%;
-    height: 175px;
-    width: 200px;
+    position: relative;
+    height: 25%;
+    width: 25%;
     transition: opacity 1s ease-in-out;
 }
 
@@ -211,6 +190,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
 .img-area img.back:hover {
     opacity: 100;
     cursor: pointer;
+  
 }
 .socials li{
     
@@ -219,7 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
     position: relative;
     margin: 0 -9px;
     top: 4px;
-    right: -220px;
+    right: -60%;
                    
 }
 
@@ -291,7 +271,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00282e34', e
     top: 300px;
     left: 31%;
     
-}    
+}  
+
+
+
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+
+
+
     .most-recent-tournament iframe {
         
     position: absolute;
