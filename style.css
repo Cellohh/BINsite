@@ -273,15 +273,6 @@ a{
     
 }  
 
-
-
-/* ===========UP TO HERE========*/
-/* ===========UP TO HERE========*/
-/* ===========UP TO HERE========*/
-/* ===========UP TO HERE========*/
-
-
-
     .most-recent-tournament iframe {
         
     position: absolute;
@@ -754,9 +745,9 @@ img:hover {
     display: flex;
     position: relative;
     width: 100%;
-    padding: 100px 30px 0px 100px;
+    padding: 100px 0px 0px 100px;
     margin: 15px;
-    right: 50px;
+    right: 4.8%;
     flex-wrap: wrap;
     align-content: space-between;
     align-items: flex-start;
@@ -905,6 +896,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
     border-radius: 15px;
 }
 
+.volunteer-button:hover {
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
 .vendor {
     
       
@@ -946,6 +944,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     cursor: pointer;
     margin-top: 5px;
     border-radius: 15px;
+}
+
+.vendor-button:hover {
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.17),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
 }
 
 
@@ -1324,6 +1329,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 
 
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+
 
 #store-1st-bg {
     
@@ -1378,7 +1388,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     box-shadow: 0 3px 6px rgba(0,0,0,0.17),
     0 3px 6px rgba(0,0,0,0.23);
     transform: translate(0px, -8px);
-    background-size: 150%;
+    background-size: 100%;
     transition: 1s;
     
 }
