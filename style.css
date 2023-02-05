@@ -15,15 +15,6 @@
 }
 
 
-
-/* ===========UP TO HERE========*/
-/* ===========UP TO HERE========*/
-/* ===========UP TO HERE========*/
-/* ===========UP TO HERE========*/
-
-
-
-
 body, html {
 
     height: 100%;
@@ -271,6 +262,15 @@ a{
   
 }
 
+
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+/* ===========UP TO HERE========*/
+
+
+
+
 .most-recent-tournament{
     
     position: relative;
@@ -279,7 +279,7 @@ a{
     font-size: 18px;
     color: burlywood;
     top: 300px;
-    left: 31%;
+    margin: auto;
     
 }  
 
