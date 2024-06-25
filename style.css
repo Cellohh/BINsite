@@ -46,7 +46,7 @@ header{
 
 header:hover{
     
-    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282e34+0,282e34+100&1+0,0+40,0+60,1+100 */
+background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282e34+0,282e34+100&1+0,0+40,0+60,1+100 */
 background: -moz-linear-gradient(left,  rgba(40,46,52,1) 0%, rgba(40,46,52,0) 40%, rgba(40,46,52,0) 60%, rgba(40,46,52,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  rgba(40,46,52,1) 0%,rgba(40,46,52,0) 40%,rgba(40,46,52,0) 60%,rgba(40,46,52,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  rgba(40,46,52,1) 0%,rgba(40,46,52,0) 40%,rgba(40,46,52,0) 60%,rgba(40,46,52,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -1346,6 +1346,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     background-attachment: scroll;
    
     
+}
+
+#spring {
+    
+    background-color: #282e34;
+    overflow: hidden;    
+ 
 }
 
 #store-2nd-bg {
