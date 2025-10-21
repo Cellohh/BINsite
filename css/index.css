@@ -10,9 +10,9 @@
   height: 100vh;
 }
 
-#home-1st-bg { background: url('bg5.png') center/cover no-repeat; }
-#home-2nd-bg { background: url('2ndbg.png') center/cover no-repeat; }
-#home-3rd-bg { background: url('3rddbg.png') center/cover no-repeat; }
+#home-1st-bg { background: url('../bg5.png') center/cover no-repeat; }
+#home-2nd-bg { background: url('../2ndbg.png') center/cover no-repeat; }
+#home-3rd-bg { background: url('../3rddbg.png') center/cover no-repeat; }
 
 #featured {
   text-align: center;

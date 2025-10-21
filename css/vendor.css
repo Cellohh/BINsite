@@ -2,7 +2,7 @@
 
 /* Hero background */
 #vendor-back {
-  background: url('twoguys2.png') center/cover no-repeat;
+  background: url('../twoguys2.png') center/cover no-repeat;
   background-attachment: fixed;
   min-height: 80vh;
   position: relative;
@@ -63,7 +63,7 @@
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   #vendor-back {
-    background: url('twoguys2.png') center/cover no-repeat;
+    background: url('../twoguys2.png') center/cover no-repeat;
     background-attachment: scroll;
   }
 
@@ -80,7 +80,7 @@
 
 @media (max-width: 480px) {
   #vendor-back {
-    background: url('twoguys2.png') center/cover no-repeat;
+    background: url('../twoguys2.png') center/cover no-repeat;
     background-attachment: contain;
   }
 

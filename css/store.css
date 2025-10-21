@@ -4,7 +4,7 @@
 
 /* Hero background */
 #store-1st-bg {
-  background: url('shop2.jpg') center/cover no-repeat;
+  background: url('../shop2.jpg') center/cover no-repeat;
   background-attachment: fixed;
   min-height: 70vh;
   position: relative;

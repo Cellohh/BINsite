@@ -10,7 +10,7 @@ h2 {
 
 /* Hero section */
 #media-1st-bg {
-  background: url('screen.jpg') center/cover no-repeat;
+  background: url('../screen.jpg') center/cover no-repeat;
   background-attachment: fixed;
   min-height: 90vh;
   position: relative;
@@ -200,7 +200,7 @@ h2 {
 /* Small phones (iPhone SE → iPhone 14 Pro Max) */
 @media (max-width: 480px) {
   #media-1st-bg {
-    background: url('screen.jpg') center/cover no-repeat;
+    background: url('../screen.jpg') center/cover no-repeat;
     background-attachment: cover;
     min-height: 55vh;
   }
