@@ -1,0 +1,281 @@
+#tourney-1st-bg {
+  background-image: url('/tourney2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+}
+
+#tourney-2nd-bg {
+  background: linear-gradient(to bottom, #008080, #282e34);
+  min-height: 100%;
+}
+
+.video-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+}
+
+.videos {
+  flex: 1 1 500px;
+  max-width: 700px;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.videos p {
+  color: #ddd;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#tourney-3rd-bg {
+  background: #282e34;
+  min-height: 65%;
+}
+
+h2, h3 {
+  font-weight: 400;
+}
+
+#ABACABB {
+  position: relative;
+  top: -250px;
+}
+
+#next-tournament {
+  text-align: center;
+  padding: 0px;
+  padding-top: 100px;
+}
+
+#tourneys {
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+#recent-tournaments-text {
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  padding: 0 10%;
+}
+
+.game-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.game-card span {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border-color: rgba(255,255,255,0.2);
+}
+
+#gray-extender {
+  background: #000000;
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.join-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.join-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 20px;
+  width: 200px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.join-card img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.join-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.coming-soon {
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+#gta {
+  position: relative;
+  top: -250px;
+}
+
+/* ========== MOBILE RESPONSIVENESS FIXES ========== */
+
+/* --- Tablets and smaller --- */
+@media (max-width: 992px) {
+  #tourneys span.first-border {
+    font-size: 42px;
+    letter-spacing: 4px;
+    padding: 10px;
+  }
+
+  .video-container-1 {
+    gap: 25px;
+  }
+
+  .videos {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .games-grid {
+    padding: 0 5%;
+    gap: 20px;
+  }
+
+  .join-grid {
+    gap: 40px;
+  }
+
+  .sponsor-box {
+    max-width: 400px;
+    margin: 60px auto;
+  }
+}
+
+/* --- Mobile phones (iPhone SE → 14 Pro Max) --- */
+@media (max-width: 480px) {
+  #tourneys span.first-border {
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    padding: 8px;
+  }
+
+  #next-tournament {
+    padding-top: 300px;
+  }
+
+  #next-tournament img {
+    max-width: 450px;
+  }
+
+  #next-tournament p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .video-container-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .videos {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .videos p {
+    font-size: 0.8rem;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    padding: 0 5%;
+  }
+
+  .game-card img {
+    height: 140px;
+  }
+
+  .game-card span {
+    font-size: 0.9rem;
+  }
+
+  .join-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .join-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .join-card img {
+    width: 100px;
+  }
+
+  .sponsor-box {
+    max-width: 300px;
+    padding: 20px;
+    margin: 180px auto;
+  }
+
+  .sponsor-box img {
+    width: 50px;
+  }
+}

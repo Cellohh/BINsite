@@ -1,0 +1,296 @@
+/* ===========================
+   ABOUT PAGE BASE STYLES
+   =========================== */
+
+#about-back {
+  background-image: url('/tempbg.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+#about-2nd-bg {
+  background-color: #FAD4AA;
+  min-height: 100%;
+}
+
+/* Text + image container */
+.about-container {
+  margin: 0 auto;
+  width: 50%;
+  padding: 8px;
+}
+
+.about-container img {
+  float: left;
+  padding: 0 15px 10px 0;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.p-about {
+  font-family: monospace;
+  color: #000;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.about-box {
+  background: #FAD4AA;
+  margin: 50px 0;
+  border-radius: 14px;
+  box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+
+/* Positioning for background sections */
+#about {
+  position: relative;
+  top: -15px;
+}
+
+#goldeneye {
+  position: relative;
+  top: -275px;
+}
+
+#goldeneye .border {
+  white-space: normal;
+  display: inline-block;
+  text-align: center;
+}
+
+#starcraft {
+  position: relative;
+  top: -300px;
+}
+
+#tourney-3rd-bg {
+  background: #282e34;
+  min-height: 50vh;
+  padding: 60px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* ==============================
+   ABOUT BOX (Modal trigger)
+   ============================== */
+.about-box {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+  background-color: #FAD4AA;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 14px;
+  font-family: monospace;
+  box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* ==============================
+   SLIDE-UP MODAL FOR CREDITS (FIXED CENTER)
+   ============================== */
+.credits-modal {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 100%;
+  height: 17vh;
+  background: #FAD4AA;
+  color: #000;
+  transition: bottom 0.4s ease;
+  border-radius: 20px 20px 0 0;
+  z-index: 9999;
+  box-shadow: 0 -8px 20px rgba(0,0,0,0.6);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Active state slides it up */
+.credits-modal.active {
+  bottom: 0;
+}
+
+/* Inner modal content centered and constrained */
+.credits-content {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: monospace;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.credits-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.credits-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.credits-content li {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #000;
+  transition: transform 0.2s ease;
+}
+
+.close-modal:hover {
+  transform: scale(1.2);
+}
+
+/* ✅ Fix for iPad + Safari */
+@media (min-width: 768px) and (max-width: 1366px),
+(-webkit-touch-callout: none) {
+  .credits-modal {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .about-box {
+    width: 90%;
+    left: 2%;
+  }
+
+  .sponsor-box {
+    right: -3%;
+    transform: translateX(-15%);
+  }
+
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+/* Tablets and smaller laptops */
+@media (max-width: 992px) {
+  .about-container {
+    width: 70%;
+  }
+}
+
+/* Mobile landscape and below */
+@media (max-width: 768px) {
+  .about-container {
+    width: 85%;
+  }
+
+  .about-container img {
+    float: none;
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 80%;
+  }
+
+  .p-about {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .about-box {
+    width: 90%;
+  }
+}
+
+/* iPhone SE / very small screens */
+@media (max-width: 480px) {
+  #about-back {
+    background-image: url('/tempbg2.png');
+    background-size: cover;
+  }
+
+  #goldeneye {
+    margin-top: -5px;
+  }
+
+  #goldeneye .border {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    display: block;
+  }
+
+  .about-container {
+    width: 92%;
+    padding: 10px;
+  }
+
+  .about-container img {
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .p-about {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .sponsor-box {
+    max-width: 400px;
+    margin: 60px auto;
+  }
+
+  .credits-modal {
+    height: 37vh;
+  }
+
+  .credits-content {
+    padding: 20px;
+  }
+}
+
+/* ✅ iPad & Safari center fix */
+@media (min-width: 768px) and (max-width: 1366px) {
+  .credits-modal {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 100%;
+  }
+}
+
+/* ✅ Safari-specific patch */
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .credits-modal {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+  }
+}

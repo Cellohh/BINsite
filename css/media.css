@@ -1,0 +1,265 @@
+/* =============================
+   MEDIA PAGE BASE STYLES
+   ============================= */
+
+h2 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/* Hero section */
+#media-1st-bg {
+  background: url('/screen.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  min-height: 90vh;
+  position: relative;
+  margin-top: 0;
+}
+
+/* Main section */
+#media-2nd-bg {
+  background: #27173e;
+  padding: 100px 0;
+}
+
+/* Grid layout */
+.media-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 0 5%;
+}
+
+/* Media box */
+.media-box {
+  background: #1f102f;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.media-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Video & image wrapper */
+.media-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.media-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.media-box:hover .media-wrapper img {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+/* Titles & text */
+.media-box h2 {
+  font-size: 1.25rem;
+  margin: 15px 0 5px;
+  color: #f6c377;
+}
+
+.media-box p {
+  font-size: 0.95rem;
+  color: #ddd;
+  padding: 0 10px 15px;
+}
+
+/* Footer section */
+#tourney-3rd-bg-media {
+  background: #151b24;
+  min-height: 65vh;
+  padding: 60px 0;
+  color: #fff;
+}
+
+/* Text positioning */
+#media {
+  position: relative;
+  top: -25px;
+}
+
+#turok {
+  position: relative;
+  top: -350px;
+}
+
+#jedi {
+  position: relative;
+  top: -300px;
+}
+
+/* =============================
+   RESPONSIVE DESIGN
+   ============================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+  #media-1st-bg {
+    background-attachment: contain;
+    min-height: 70vh;
+  }
+
+  #turok {
+    top: -350px;
+  }
+
+  #jedi {
+    top: -300px;
+  }
+
+  .media-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+
+  .media-wrapper {
+    height: 200px;
+  }
+
+  .sponsor-box {
+    max-width: 400px;
+    margin: 180px auto;
+    text-align: center;
+  }
+}
+
+/* Tablets / Mobile Landscape */
+@media (max-width: 768px) {
+  #media-1st-bg {
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+  }
+
+  #media .first-border {
+    font-size: 1.8rem;
+    padding: 10px 18px;
+  }
+
+  #turok {
+    top: -160px;
+  }
+
+  #turok .border {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .media-wrapper {
+    height: 180px;
+  }
+
+  .media-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #jedi {
+    top: -160px;
+  }
+
+  #jedi .border {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .sponsor-box {
+    max-width: 340px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+}
+
+/* Small phones (iPhone SE → iPhone 14 Pro Max) */
+@media (max-width: 480px) {
+  #media-1st-bg {
+    background: url('/screen.jpg') center/cover no-repeat;
+    background-attachment: cover;
+    min-height: 55vh;
+  }
+
+  .ptext .first-border {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 10px 14px;
+    line-height: 1.3;
+    display: inline-block;
+  }
+
+  #turok {
+    top: -350px;
+  }
+
+  #turok .border {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    white-space: pre-line;
+  }
+
+  .media-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .media-wrapper {
+    height: 160px;
+  }
+
+  #jedi {
+    top: -320px;
+  }
+
+  #jedi .border {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    line-height: 1.2;
+  }
+
+  #tourney-3rd-bg-media {
+  background: #151b24;
+  min-height: 65vh;
+  padding: 60px 0;
+  color: #fff;
+}
+
+  .sponsor-box {
+    max-width: 300px;
+    margin: 80px auto;
+    text-align: center;
+    height: auto;
+    padding: 16px;
+  }
+
+  .sponsor-box img {
+    max-width: 60px;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+}

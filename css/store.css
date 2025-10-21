@@ -1,0 +1,214 @@
+/* =============================
+   STORE PAGE BASE STYLES
+   ============================= */
+
+/* Hero background */
+#store-1st-bg {
+  background: url('/shop2.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  min-height: 70vh;
+  position: relative;
+}
+
+/* Code text (R+←BA) */
+#goldenSun {
+  position: relative;
+  top: -250px;
+  z-index: 2;
+  text-align: center;
+}
+#goldenSun .border {
+  color: #fff;
+  padding: 10px 25px;
+}
+
+/* =============================
+   PRODUCT GRID (Fourthwall Manual)
+   ============================= */
+#store-products {
+  position: relative;
+  background: #282e34;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  top: -3%;
+}
+
+.store-title {
+  font-family: monospace;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #FAD4AA;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.product-card {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 10px 0;
+  color: #fff;
+}
+.product-card .price {
+  color: #FAD4AA;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/* Visit Store Button */
+.buy-now-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  font-family: monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #008080, #282e34);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.buy-now-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px #008080;
+}
+
+/* =============================
+   FOOTER SECTION
+   ============================= */
+#tourney-3rd-bg {
+  position: relative;
+  background: #000000;
+  color: #fff;
+  padding: 40px 0;
+  margin-bottom: -1.5%;
+  text-align: center;
+  top: -3%;
+}
+#doom {
+  position: relative;
+  top: -300px;
+  z-index: 2;
+}
+#doom .border {
+  color: #fff;
+  padding: 10px 25px;
+}
+
+/* =============================
+   RESPONSIVE DESIGN
+   ============================= */
+@media (max-width: 1024px) {
+  #store-1st-bg {
+    background-attachment: scroll;
+    min-height: 60vh;
+  }
+  #goldenSun { top: -275px; }
+  #doom { top: -300px; }
+
+  #tourney-3rd-bg {
+  position: relative;
+  background: #000000;
+  color: #fff;
+  padding: 40px 0;
+  margin-bottom: -3.5%;
+  text-align: center;
+  top: -3%;
+}
+
+  .sponsor-box {
+    right: -3%;
+    transform: translateX(-15%);
+  }
+}
+
+@media (max-width: 768px) {
+  #store-1st-bg {
+    background-size: cover;
+    min-height: 55vh;
+  }
+  #goldenSun { top: -120px; }
+  #goldenSun .border { font-size: 1.6rem; }
+
+  .product-card {
+    max-width: 260px;
+  }
+  .store-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #store-1st-bg {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  #goldenSun {
+    top: -260px;
+  }
+  #goldenSun .border {
+    font-size: 1.3rem;
+    padding: 8px 14px;
+  }
+
+  #store-products {
+  position: relative;
+  top: -4%;
+}
+
+  .product-card {
+    max-width: 90%;
+  }
+  .store-title {
+    font-size: 1.4rem;
+  }
+  .buy-now-btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+
+  #tourney-3rd-bg {
+  position: relative;
+  top: -5%;
+  margin-bottom: -7%;
+}
+#doom {
+  position: relative;
+  top: -300px;
+  z-index: 2;
+}
+
+  .sponsor-box {
+    max-width: 400px;
+    margin: 60px auto;
+    left: 13.5%;
+  }
+}

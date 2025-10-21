@@ -1,0 +1,398 @@
+/* ========== RESET + BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: fantasy, serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #777;
+}
+
+/* ========== HEADER ========== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99.2%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 1000;
+  background: rgba(40, 46, 52, 0.436);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  transition: background 0.3s ease;
+}
+
+header:hover {
+  background: rgba(40, 46, 52, 1);
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f2f0eb;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 5px;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+  filter: invert(1);
+  transition: 0.5s;
+}
+
+/* ========== LEFT LINKS ========== */
+.nav-links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f2f0eb;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 10px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+/* ========== CENTER LOGO ========== */
+.top-logo {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-area {
+  position: relative;
+  display: inline-block;
+}
+
+.img-area img {
+  height: 85px;
+  width: auto;
+  transition: opacity 0.5s ease-in-out;
+  display: block;
+}
+
+.img-area img.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.img-area:hover img.front {
+  opacity: 0;
+}
+.img-area:hover img.back {
+  opacity: 1;
+}
+
+/* ========== SOCIAL ICONS (DESKTOP) ========== */
+.socials ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  margin-right: 10%;
+  padding: 0;
+}
+
+.socials li a {
+  display: inline-flex;
+  align-items: center;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.socials li img {
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+.socials li:hover a {
+  filter: invert(1);
+  transform: scale(1.1);
+}
+
+/* ========== PARALLAX SECTIONS ========== */
+.pimg1, .pimg2, .pimg3, .pimg4 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.pimg1 { background-image: url('/bg5.png'); min-height: 100%; }
+.pimg2 { background-image: url('/2ndbg.png'); min-height: 400px; }
+.pimg3 { background-image: url('/3rddbg.png'); min-height: 400px; }
+.pimg4 { background-image: url('/4THBG.png'); min-height: 100%; }
+
+.section { text-align: center; padding: 50px 80px; }
+.section-light { background: #f2f0eb; color: #1c1a18; }
+.section-dark { background: #282e34; color: #f2f0eb; letter-spacing: 4px; }
+
+/* ========== TEXT OVERLAY ========== */
+.ptext {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border,
+.first-border {
+  background-color: #111;
+  color: #f2f0eb;
+  padding: 20px;
+  position: relative;
+  top: 250px;
+}
+
+/* ========== BOXES (news, merch, sponsor) ========== */
+.news-box-1,
+.merch-box,
+.sponsor-box {
+  display: inline-block;
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 2px 2px 4px 2px rgba(3,3,3);
+}
+
+.sponsor-box {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  height: 150px;
+  width: 100%;
+  max-width: 535px;
+  background-color: #f2f0eb;
+  margin: 300px;
+  padding: 32px 24px 32px 16px;
+  border-radius: 14px;
+  box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
+}
+
+.site-footer {
+  background: #f2f0eb;
+  color: #333;
+  text-align: center;
+}
+
+/* ========== MOBILE BASE ========== */
+@media(max-width:568px) {
+  header { height: 65px; }
+  .top-logo { left: 40.5%; top: 12.5%; }
+  .pimg1, .pimg2, .pimg3, .pimg4 { background-attachment: scroll; }
+}
+
+/* ========== RESPONSIVE TWEAKS ========== */
+@media (max-width: 992px) {
+  header { height: 80px; padding: 0 30px; }
+  .img-area img { height: 70px; }
+}
+@media (max-width: 1024px) {
+  header { height: 70px; padding: 0 20px; }
+  .img-area img { height: 55px; }
+}
+@media (max-width: 480px) {
+  header { height: 60px; }
+  .img-area img { height: 45px; }
+  .nav-links a { font-size: 13px; letter-spacing: 1px; }
+}
+
+/* Prevent horizontal scrollbar */
+html, body {
+  overflow-x: hidden;
+}
+
+/* === Fix logo centering after adding Contact link === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(40, 46, 52, 0.436);
+}
+
+.nav-links,
+.socials {
+  flex: 1;
+}
+
+.top-logo {
+  flex: 0 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links ul,
+.socials ul {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* optional: tighter spacing for nav links */
+.nav-links ul li a {
+  padding: 6px 10px;
+}
+
+/* ======================
+   MOBILE HAMBURGER MENU
+   ====================== */
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 2001;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #f2f0eb;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Animate to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile menu layout */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(40, 46, 52, 0.95);
+    transform: translateY(-120%);
+    transition: transform 0.3s ease;
+    z-index: 2000;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .nav-links ul li a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .top-logo {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+
+  .socials {
+    display: none;
+  }
+}
+
+/* ===== Social icons inside mobile nav ===== */
+.mobile-socials {
+  display: none;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-socials ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-socials li img {
+  height: 28px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.mobile-socials li:hover img {
+  transform: scale(1.1);
+  filter: invert(1);
+}
+
+/* ✅ Show mobile socials at same width you hide desktop socials */
+@media (max-width: 1024px) {
+  .mobile-socials {
+    display: block;
+  }
+
+  header > .socials {
+    display: none;
+  }
+}
+

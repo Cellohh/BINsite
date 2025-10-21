@@ -34,7 +34,9 @@ iddqd - doom - store
 NTHGTHDGDCRTDTRK - Turok - media & promos
 g_saberrealisticcombat - Jedi Outcast - media & promos
 ↑C↓C←C→CA+START - Sonic The Hedgehog - volunteer
+B, F, F, QP - Killer Instinct Orchid Flasher - volunteer
 klapaucius - The Sims - vendor
-
+BLK+↑,↑ - Mortal Kombat Scorpion Fatality - vendor
+Impulse 101 - Half-Life 2 - contact
 
 

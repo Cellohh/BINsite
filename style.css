@@ -44,9 +44,9 @@ header{
 
 }
 
-header:hover{
+header:hover {
     
-background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282e34+0,282e34+100&1+0,0+40,0+60,1+100 */
+/*background-color: ; Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#282e34+0,282e34+100&1+0,0+40,0+60,1+100 */
 background: -moz-linear-gradient(left,  rgba(40,46,52,1) 0%, rgba(40,46,52,0) 40%, rgba(40,46,52,0) 60%, rgba(40,46,52,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  rgba(40,46,52,1) 0%,rgba(40,46,52,0) 40%,rgba(40,46,52,0) 60%,rgba(40,46,52,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  rgba(40,46,52,1) 0%,rgba(40,46,52,0) 40%,rgba(40,46,52,0) 60%,rgba(40,46,52,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -356,7 +356,7 @@ a{
 .ptext{
     
     position: absolute;
-    top 50%;
+    top: 10%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -471,12 +471,12 @@ a{
         font-size: 18px;
     }
     
-    .sponsor-box{
+    .sponsor-box {
     
     display: inline-block;
     position: relative;
     color: #333;
-    height 250px;
+    height: 250px;
     width: 100%;
     top: -100px;
     left: -300px;
@@ -554,29 +554,27 @@ a{
 }
 
 .buy-1 {
-    /*Copied gradient code to look nice -Cello  /*
-    
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
-background: rgb(239,197,202); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(239,197,202,1) 0%, rgba(210,75,90,1) 50%, rgba(186,39,55,1) 51%, rgba(241,142,153,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=0 ); /* IE6-9 */
+  /* Glossy red gradient */
+  background: linear-gradient(to bottom,
+    #efc5ca 0%,
+    #d24b5a 50%,
+    #ba2737 51%,
+    #f18e99 100%
+  );
 
-
-
-    
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    width: 50%;
-    padding: 15px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-radius: 15px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  width: 50%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 15px;
 }
+
+
 
 .buy-1:hover{
     
@@ -586,29 +584,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', end
 }
 
 .buy-2 {
-    /*Copied gradient code to look nice -Cello  /*
-    
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
-background: rgb(254,204,177); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+  /* Glossy orange gradient */
+  background: linear-gradient(to bottom,
+    #feccb1 0%,
+    #f17432 50%,
+    #ea5507 51%,
+    #fb955e 100%
+  );
 
-
-    
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    width: 50%;
-    padding: 15px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-radius: 15px;
-    
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  width: 50%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 15px;
 }
+
+
 
 .buy-2:hover{
     
@@ -702,7 +698,7 @@ img:hover {
     display: inline-block;
     position: relative;
     color: #333;
-    height 250px;
+    height: 50px;
     width: 100%;
     max-width: 535px;
     background-color: #fff;
@@ -750,32 +746,72 @@ img:hover {
     
 }
 
+/* Recent tournaments container */
 .video-container-1 {
-    
-    display: flex;
-    position: relative;
-    width: 100%;
-    padding: 100px 0px 0px 100px;
-    margin: 15px;
-    right: 4.8%;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    justify-content: center;
-          
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* spacing between videos */
+  margin-top: 120px;
 }
 
+/* Individual video block */
 .videos {
-    
-    margin: 25px;
-    
+  flex: 1 1 500px; /* grow, shrink, minimum width */
+  max-width: 700px;
+  background: #111; /* subtle dark background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  text-align: center;
 }
 
+/* Video titles */
 .videos p {
-    
-    color: white;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+<<<<<<< Updated upstream
 }
 
+/* Responsive video wrapper */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+=======
+>>>>>>> Stashed changes
+}
+
+/* Responsive video wrapper */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
 
 .hex-contain {
     
@@ -882,7 +918,7 @@ img:hover {
 
 .volunteer-button {
     
-        /*Copied gradient code to look nice -Cello  /*
+        /*Copied gradient code to look nice -Cello  */
     
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
 background: rgb(183,222,237); /* Old browsers */
@@ -1093,34 +1129,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     left: -200px;
 } 
     
-    .volunteer-button {
-    
-        /*Copied gradient code to look nice -Cello  /*
-    
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
-background: rgb(183,222,237); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(183,222,237,1) 0%,rgba(113,206,239,1) 50%,rgba(33,180,226,1) 51%,rgba(183,222,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 ); /* IE6-9 */
+.volunteer-button {
+  /* Copied gradient code to look nice -Cello */
 
-    
-    
-    display: flex;
-    position: relative;
-    left: 25px;
-    top: 2px;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    height: 10%;
-    width: 100%;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    margin-top: 5px;
-    border-radius: 15px;
+  background: linear-gradient(to bottom,
+    rgba(183,222,237,1) 0%,
+    rgba(113,206,239,1) 50%,
+    rgba(33,180,226,1) 51%,
+    rgba(183,222,237,1) 100%
+  );
+
+  display: flex;
+  position: relative;
+  left: 25px;
+  top: 2px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  height: 10%;
+  width: 100%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 15px;
 }
+
     
     
 .vendor-button {
@@ -1165,7 +1199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     display: inline-block;
     position: relative;
     color: #333;
-    height 250px;
+    height: 250px;
     width: 99%;
     max-width: 535px;
     background-color: #fff;
@@ -1175,7 +1209,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     box-shadow: 2px 2px 4px 2px rgba(3, 3, 3);
 }
     
-}
+
 
 
 
@@ -1229,7 +1263,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
     display: inline-block;
     position: relative;
     color: #333;
-    height 250px;
+    height: 250px;
     width: 100%;
     max-width: 1500px;
     background-color: #FAD4AA;
@@ -1409,7 +1443,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', end
 
 .store-button {
     
-        /*Copied gradient code to look nice -Cello  /*
+        /*Copied gradient code to look nice -Cello  */
     
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
 background: rgb(183,222,237); /* Old browsers */
@@ -1514,7 +1548,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
     
     .store-button {
     
-        /*Copied gradient code to look nice -Cello  /*
+        /*Copied gradient code to look nice -Cello  */
     
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b7deed+0,71ceef+50,21b4e2+51,b7deed+100;Shape+1+Style */
 background: rgb(183,222,237); /* Old browsers */
