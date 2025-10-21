@@ -3,7 +3,7 @@
    =========================== */
 
 #about-back {
-  background-image: url('/tempbg.png');
+  background-image: url('tempbg.png');
   background-repeat: repeat;
   background-size: cover;
   background-position: center center;
@@ -231,7 +231,7 @@
 /* iPhone SE / very small screens */
 @media (max-width: 480px) {
   #about-back {
-    background-image: url('/tempbg2.png');
+    background-image: url('tempbg2.png');
     background-size: cover;
   }
 
