@@ -4,7 +4,7 @@
 
 /* Background section */
 #contact-bg {
-  background: url('contact.jpg') center/cover no-repeat;
+  background: url('../contact.jpg') center/cover no-repeat;
   background-attachment: fixed;
   min-height: 80vh;
   display: flex;
@@ -209,7 +209,7 @@
 /* Small phones (iPhone SE → iPhone 14 Pro Max) */
 @media (max-width: 480px) {
   #contact-bg {
-    background: url('contact.jpg') center/cover no-repeat;
+    background: url('../contact.jpg') center/cover no-repeat;
     background-attachment: scroll;
     min-height: 55vh;
   }
