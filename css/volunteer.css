@@ -4,7 +4,7 @@
 
 /* Hero / background section */
 #volunteer-back {
-  background: url('/seoul2.png') center/cover no-repeat;
+  background: url('seoul2.png') center/cover no-repeat;
   min-height: 80vh;
   position: relative;
 }
@@ -92,7 +92,7 @@
 @media (max-width: 480px) {
 
   #volunteer-back {
-  background: url('/seoul2.png') center/cover no-repeat;
+  background: url('seoul2.png') center/cover no-repeat;
   min-height: 80vh;
   position: relative;
 }
