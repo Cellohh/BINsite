@@ -1,6 +1,7 @@
 /* =============================
    MEDIA PAGE BASE STYLES
    ============================= */
+   
 
 h2 {
   font-size: 2.7rem;
@@ -117,19 +118,30 @@ h2 {
   font-size: 0.95rem;
   line-height: 1.6;
   opacity: 0.85;
+  font-family: 'Inter', sans-serif;
 }
 
-/* ===== CREDIT CARD ===== */
+/* =============================
+   CREDIT CARD PREMIUM STYLING
+   ============================= */
 
 .credit-card {
-  background: #F9F6EE;
-  color: #000;
-  border-radius: 15px;
-  margin-bottom: 25px;
+  background: linear-gradient(145deg, #fdfcf7, #f6f1e7); /* subtle gradient for depth */
+  color: #1f1f1f;
+  border-radius: 18px;
+  margin-bottom: 30px;
   box-shadow:
-    0 0 0 2px rgba(246, 195, 119, 0.6),
-    0 10px 30px rgba(0, 0, 0, 0.5);
+    0 6px 15px rgba(0,0,0,0.1), /* soft shadow */
+    0 12px 35px rgba(0,0,0,0.15);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.credit-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.15),
+    0 20px 50px rgba(0,0,0,0.2);
 }
 
 .credit-card summary {
@@ -152,32 +164,39 @@ h2 {
 }
 
 .video-title {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 600;
   letter-spacing: 1px;
+  color: #27173e; /* rich accent */
+  margin-bottom: 4px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .video-meta {
-  font-size: 0.85rem;
-  opacity: 0.7;
-  margin-top: 6px;
+  font-size: 0.88rem;
+  opacity: 0.75;
+  margin-top: 4px;
+  color: #3d3d3d;
+  font-family: 'Inter', sans-serif;
 }
 
 .expand-meta {
-  font-size: 0.75rem;
-  opacity: 0.9;
-  margin-top: 6px;
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 4px;
+  color: #555;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Watch button */
 .watch-link {
   text-decoration: none;
   color: #c21807;
-  font-weight: bold;
+  font-weight: 600;
   border: 2px solid #f6c377;
-  padding: 8px 14px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   white-space: nowrap;
 }
 
@@ -186,11 +205,89 @@ h2 {
   color: #27173e;
 }
 
-/* Expanded content */
+/* Credit content (premium) */
 .credit-content {
   padding: 0 24px 28px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255,255,255,0.03); /* subtle inner highlight */
 }
+
+.credit-content h4 {
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #27173e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.credit-content p,
+.credit-content li {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #3d3d3d;
+  margin-bottom: 12px;
+}
+
+.credit-content li {
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+.credit-content a {
+  color: #7a3cff;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.credit-content a:hover {
+  color: #f6c377;
+  text-decoration: none;
+}
+
+/* Expanded content */
+/* =============================
+   CREDIT CONTENT TEXT STYLING
+   ============================= */
+
+.credit-content h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #27173e; /* darker accent for headings */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.credit-content p,
+.credit-content li {
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #3d3d3d; /* soft dark gray for readability */
+  margin-bottom: 12px;
+}
+
+.credit-content li {
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+/* Optional: subtle link styling within credit content */
+.credit-content a {
+  color: #7a3cff;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.credit-content a:hover {
+  color: #f6c377;
+  text-decoration: none;
+}
+
 
 /* =============================
    FOOTER SECTION (FIXED)
